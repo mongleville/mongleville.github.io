@@ -1,0 +1,34 @@
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>MONGLEVILLE</title>
+        <meta property="og:title" content="25TB of criminal data released" />
+        <meta property="og:description" content="25tb criminal data of americans released today. Mongle" />
+        <meta property="og:site_name" content="25TB of criminal data released" />
+        <meta property="og:image" content="https://github.com/mongleville/mongleville.github.io/raw/main/download_10.jpg" />
+
+        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:creator" content="25TB of criminal data released" />
+        <meta property="twitter:image" content="https://github.com/mongleville/mongleville.github.io/raw/main/download_10.jpg" /
+</head>
+<body>
+<form>
+    <label for="pswd">Enter your password: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "61 64 6d 69 6e";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="analytics.html";
+        }
+        else{
+            alert("Password does not match.");
+        }
+    }
+</script>
+</body>
+</html>
