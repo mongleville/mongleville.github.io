@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MONGLEVILLE</title>
+    <meta property="og:title" content="25TB of SMILING FRIENDS data released" />
+    <meta property="og:description" content="25tb SMILING FRIENDS data of americans released today. Mongle" />
+    <meta property="og:site_name" content="25TB of SMILING FRIENDS data released" />
+    <meta property="og:image" content="images/favb4.png" />
+
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:creator" content="25TB of SMILING FRIENDS data released" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="twitter:image" content="images/favb4.png" />
+    
+    <style>
+        body {
+            background-image: url('images/smileybiley.jpeg');
+            background-size: cover;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgba(255, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        label {
+            font-size: 24px;
+            color: #00ff00;
+        }
+        input[type=password] {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 2px solid #0000ff;
+            font-size: 20px;
+        }
+        input[type=button] {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 2px solid #0000ff;
+            font-size: 20px;
+            background-color: #ffff00;
+            color: #ff0000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <label for="pswd">Enter your password: </label><br>
+    <input type="password" id="pswd"><br>
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "62 69 67 20 62 6C 61 63 6B 20 62 61 6C 6C 73";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="analytics.html";
+        }
+        else{
+            alert("Password does not match.");
+        }
+    }
+</script>
+</body>
+</html>

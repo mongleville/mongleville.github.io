@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONGLEVILLE</title>
+    <meta property="og:title" content="25TB of SMILING FRIENDS data released" />
+    <meta property="og:description" content="25tb SMILING FRIENDS data of americans released today. Mongle" />
+    <meta property="og:site_name" content="25TB of SMILING FRIENDS data released" />
+    <meta property="og:image" content="images/favb4.png" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:creator" content="25TB of SMILING FRIENDS data released" />
+    <meta property="twitter:image" content="images/favb4.png" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Comic Sans MS', cursive;
+            background-image: url('images/gar.jpg');
+            background-size: cover;
+            background-repeat: repeat;
+        }
+
+        .button {
+            margin: 10px; /* Adjust the margin here for spacing */
+            padding: 15px 30px;
+            background-color: #ff6666; /* Changed background color to ugly pink */
+            border: 3px dashed #00ccff; /* Ugly blue dashed border */
+            border-radius: 20px; /* More roundness for extra ugliness */
+            color: #800080; /* Deep purple text color */
+            text-decoration: line-through; /* Strikethrough text for extra ugliness */
+            text-align: center;
+            font-size: 24px; /* Bigger font size */
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            animation: floatAway 5s ease-in-out infinite alternate; /* Make buttons gently float away */
+        }
+
+        .button:hover {
+            background-color: #ff3333; /* Even uglier pink on hover */
+            color: #000; /* Black text on hover */
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: center;
+        }
+
+        @keyframes floatAway {
+            from {
+                transform: translate(0, 0);
+            }
+            to {
+                transform: translate(0, -20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            var screenWidth = window.innerWidth;
+            var screenHeight = window.innerHeight;
+            var buttonWidth = 120;
+            var buttonHeight = 50;
+            var spacing = 20; // Adjust the spacing here
+            var numColumns = Math.floor(screenWidth / (buttonWidth + spacing));
+            var numRows = Math.floor(screenHeight / (buttonHeight + spacing));
+
+            var randomRow = Math.floor(Math.random() * numRows); // Random row index
+            var randomColumn = Math.floor(Math.random() * numColumns); // Random column index
+            var contButtonPlaced = false; // Flag to track if the 'cont.html' button has been placed
+
+            for (var i = 0; i < numRows; i++) {
+                var row = document.createElement("div");
+                row.className = "button-row";
+
+                for (var j = 0; j < numColumns; j++) {
+                    var button = document.createElement("a");
+                    button.className = "button";
+                    button.innerText = "Continue";
+
+                    // Check if the current button is at the random position
+                    if (i === randomRow && j === randomColumn && !contButtonPlaced) {
+                        button.href = "cont.html"; // Change link for the randomly selected button
+                        contButtonPlaced = true; // Set flag to true indicating 'cont.html' button placed
+                    } else {
+                        button.href = "#"; // Set default link for other buttons
+                    }
+
+                    row.appendChild(button);
+                }
+
+                document.body.appendChild(row);
+            }
+        }
+    </script>
+</body>
+</html>

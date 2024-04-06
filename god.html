@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MONGLEVILLE</title>
+    <meta property="og:title" content="25TB of SMILING FRIENDS data released" />
+    <meta property="og:description" content="25tb SMILING FRIENDS data of americans released today. Mongle" />
+    <meta property="og:site_name" content="25TB of SMILING FRIENDS data released" />
+    <meta property="og:image" content="images/favb4.png" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:creator" content="25TB of SMILING FRIENDS data released" />
+    <meta property="twitter:image" content="images/favb4.png" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            background-image: url("images/gr.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #ff00ff;
+        }
+
+        .pulsating-image {
+            animation: pulse 1s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.1);
+            }
+        }
+
+        #video-frame {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            width: 50%;
+            height: auto;
+        }
+
+        .ugly-element {
+            border: 5px solid #00ff00;
+            background-color: #ffff00;
+            color: #0000ff;
+            padding: 10px;
+            margin: 10px;
+            font-size: 20px;
+        }
+
+        .ugly-table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .ugly-table th,
+        .ugly-table td {
+            border: 2px solid #ff0000;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .ugly-table th {
+            background-color: #00ffff;
+        }
+
+        .ugly-poll {
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        .ugly-progress {
+            width: 70%;
+            margin: 20px auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 24px;
+            background-color: red;
+            color: white;
+            border: 3px solid red;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Pulsating Images -->
+    <img src="images/jes.png" class="pulsating-image" style="position: absolute; top: 20%; left: 10%;"
+        alt="Pulsating Image">
+    <img src="images/jes.png" class="pulsating-image" style="position: absolute; top: 50%; left: 70%;"
+        alt="Pulsating Image">
+    <img src="images/jes.png" class="pulsating-image" style="position: absolute; top: 80%; left: 30%;"
+        alt="Pulsating Image">
+
+    <!-- Background Video Frame -->
+    <video id="video-frame" src="images/gr.mp4" controls></video>
+
+    <!-- Random HTML Elements -->
+    <div class="ugly-element">
+        Take a moment to enjoy your time here :-)
+    </div>
+    <button onclick="randomPage()">Bitcoin</button>
+    <script>
+      function randomPage() {
+        // List of pages on your site
+        var pages = ['index.html', 'ip.html', 'loss.html', 'verify2.html'];
+    
+        // Generate a random index
+        var randomIndex = Math.floor(Math.random() * pages.length);
+    
+        // Get the random page URL
+        var randomPageUrl = pages[randomIndex];
+    
+        // Navigate to the random page
+        window.location.href = randomPageUrl;
+      }
+    </script>
+    
+    <table class="ugly-table">
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+            </tr>
+            <tr>
+                <td>Data 3</td>
+                <td>Data 4</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="ugly-poll">
+        <h2>Poll Question</h2>
+        <input type="radio" name="poll" value="option1"> Option 1<br>
+        <input type="radio" name="poll" value="option2"> Option 2<br>
+        <input type="radio" name="poll" value="option3"> Option 3<br>
+        <input type="radio" name="poll" value="option4"> Option 4<br>
+        <button>Submit</button>
+    </div>
+    <div class="ugly-progress">
+        <h2>Progress Bar</h2>
+        <progress value="30" max="100"></progress>
+    </div>
+
+    <!-- You can add more random HTML elements as needed -->
+
+</body>
+
+</html>

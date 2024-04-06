@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MONGLEVILLE</title>
+    <meta property="og:title" content="25TB of SMILING FRIENDS data released" />
+    <meta property="og:description" content="25tb SMILING FRIENDS data of americans released today. Mongle" />
+    <meta property="og:site_name" content="25TB of SMILING FRIENDS data released" />
+    <meta property="og:image" content="images/favb4.png" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:creator" content="25TB of SMILING FRIENDS data released" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="twitter:image"
+        content="images/favb4.png" />
+    <style>
+        body {
+            background-image: url('images/fear.png');
+            background-size: cover;
+            background-attachment: fixed;
+            /* Ensures the background doesn't scroll */
+            /* Animation for zooming and moving */
+            animation: moveBackground 5s infinite, zoomBackground 5s infinite alternate;
+            text-align: center;
+        }
+
+        /* Keyframes for zooming and moving animation */
+        @keyframes zoomAndMove {
+            0% {
+                transform: scale(1) translate(0, 0);
+            }
+
+            50% {
+                transform: scale(1.1) translate(10%, 10%);
+            }
+
+            100% {
+                transform: scale(1) translate(0, 0);
+            }
+        }
+
+        @keyframes moveBackground {
+            0% {
+                background-position: 0 0;
+            }
+
+            25% {
+                background-position: 100% 0;
+            }
+
+            50% {
+                background-position: 100% 100%;
+            }
+
+            75% {
+                background-position: 0 100%;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        @keyframes zoomBackground {
+            0% {
+                background-size: 100%;
+            }
+
+            50% {
+                background-size: 110%;
+            }
+
+            100% {
+                background-size: 100%;
+            }
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* This makes sure the container fills the entire viewport height */
+            animation: zoomAndMove 2s infinite alternate;
+        }
+
+        button {
+            font-family: Comic Sans MS, cursive, sans-serif;
+            background-color: pink;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+
+        #siteReport {
+            width: 500px;
+            height: 300px;
+            font-family: Comic Sans MS, cursive, sans-serif;
+            background-color: lightblue;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin: 20px auto;
+        }
+
+        #siteReportTitle {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        #siteReportText {
+            width: 90%;
+            height: 65%;
+            margin: 10px;
+            resize: none;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="siteReport">
+            <div id="siteReportTitle">Site Report</div>
+            <textarea id="siteReportText"
+                readonly>As of April 2024, MONGLEVILLE has mined 6 terabytes worth of data from favorite new members. The organization made a profit of 700 Litecoins, equivalent to $20. 600 credit cards and 900 cookies were transferred to the Mangleville, India server.</textarea>
+        </div>
+        <button onclick="window.location.href='index.html';">
+            Return
+        </button>
+    </div>
+</body>
+
+</html>

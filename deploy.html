@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url('images/pleasebg.jpeg');
+      background-repeat: repeat;
+      background-size: cover;
+      color: magenta;
+      font-family: Comic Sans MS, cursive, sans-serif;
+      animation: moveBackground 5s infinite, zoomBackground 5s infinite alternate;
+    }
+    
+    @keyframes moveBackground {
+      0% { background-position: 0 0; }
+      25% { background-position: 100% 0; }
+      50% { background-position: 100% 100%; }
+      75% { background-position: 0 100%; }
+      100% { background-position: 0 0; }
+    }
+    
+    @keyframes zoomBackground {
+      0% { background-size: 100%; }
+      50% { background-size: 110%; }
+      100% { background-size: 100%; }
+    }
+    
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      text-decoration: underline;
+    }
+    button {
+      background-color: cyan;
+      color: purple;
+      border: 5px solid yellow;
+      padding: 10px 20px;
+      font-size: 24px;
+      margin: 20px;
+      border-radius: 15px;
+      transition: opacity 5s; /* Fade in over 5 seconds */
+    }
+    button:hover {
+      background-color: yellow;
+      color: cyan;
+      border-color: purple;
+    }
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: auto;
+      border: 5px dashed green;
+    }
+    th, td {
+      padding: 15px;
+      text-align: center;
+      border: 2px solid black;
+    }
+    .poll-container {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .poll-question {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .poll-options {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .poll-option {
+      margin: 0 10px;
+    }
+    .search-box {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .search-input {
+      padding: 10px;
+      font-size: 20px;
+      border: 3px solid red;
+      border-radius: 10px;
+      width: 50%;
+    }
+    .search-button {
+      padding: 10px 20px;
+      font-size: 24px;
+      background-color: red;
+      color: white;
+      border: 3px solid red;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .search-button:hover {
+      background-color: white;
+      color: red;
+    }
+  </style>
+  <title>MONGLEVILLE</title>
+  <meta property="og:title" content="25TB of SMILING FRIENDS data released" />
+  <meta property="og:description" content="25tb SMILING FRIENDS data of americans released today. Mongle" />
+  <meta property="og:site_name" content="25TB of SMILING FRIENDS data released" />
+  <meta property="og:image" content="images/favb4.png" />
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:creator" content="25TB of SMILING FRIENDS data released" />
+  <meta property="twitter:image" content="images/favb4.png" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <h1>We are sorry to say you have reached an error</h1>
+  <h1>Please contact site administrator to fix process error</h1>
+  <button onclick="window.location.href='index.html';">Click Here</button>
+  <button id="downloadBtn" onclick="window.location.href='https://maps.app.goo.gl/ZCF8Ney163nybxum6';" style="opacity: 0;">Download report file :-)</button>
+  <table>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+    <tr>
+      <td>Data 1</td>
+      <td>Data 2</td>
+      <td>Data 3</td>
+    </tr>
+    <tr>
+      <td>Data 4</td>
+      <td>Data 5</td>
+      <td>Data 6</td>
+    </tr>
+  </table>
+  <div class="poll-container">
+    <div class="poll-question">What is your favorite color?</div>
+    <div class="poll-options">
+      <button class="poll-option" onclick="alert('Your vote has been cast for Red!')">Red</button>
+      <button class="poll-option" onclick="alert('Your vote has been cast for Blue!')">Blue</button>
+      <button class="poll-option" onclick="alert('Your vote has been cast for Green!')">Green</button>
+    </div>
+  </div>
+  <div class="search-box">
+    <input type="text" class="search-input" placeholder="Enter your search term">
+    <button class="search-button" onclick="alert('Searching...')">Search</button>
+  </div>
+  <script>
+    // Show the "Click Here" button instantly
+    document.querySelector('button').style.opacity = 1;
+
+    // Wait for 2 seconds before showing the download button
+    setTimeout(function() {
+      document.getElementById('downloadBtn').style.opacity = 1;
+    }, 2000);
+  </script>
+</body>
+</html>
