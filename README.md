@@ -1,1 +1,0 @@
-We were cleaning out my dad's house after he passed and found a USB drive containing 23 html files with other nonsensical code. Posting them here to preserve his memory. Not responsible for anything illegal this repository contains.
