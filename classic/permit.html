@@ -1,0 +1,26 @@
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>MONGLEVILLE</title>
+</head>
+<body>
+<form>
+    <label for="pswd">Enter your password: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "61 64 6d 69 6e";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="analytics.html";
+        }
+        else{
+            alert("Password does not match.");
+        }
+    }
+</script>
+</body>
+</html>
